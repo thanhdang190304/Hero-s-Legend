@@ -1,0 +1,37 @@
+# Unity generated files
+[Ll]ibrary/
+[Tt]emp/
+obj/
+Build/
+Builds/
+
+# User-specific files
+.vscode/
+.idea/
+
+# Ignore system files (macOS, Windows)
+.DS_Store
+Thumbs.db
+
+# Ignore log files
+*.log
+
+# Compiled binaries
+bin/
+obj/
+
+# Build output directories
+build/
+dist/
+
+# IDE-specific files
+.vscode/
+.idea/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.bak
