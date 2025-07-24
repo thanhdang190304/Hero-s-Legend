@@ -32,14 +32,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5892137326146081114}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 0.0021108137, w: -0.99999785}
-  m_LocalPosition: {x: -0.26, y: 2.09, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.07, y: 2.04, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8413638519470396863}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.242}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3173115801815774168
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -81,8 +81,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 35822497
-  m_SortingLayer: 3
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 20daa800a641d9e4cae18a06630db1ef, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -180,12 +180,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 453c68dbe0133394486fc6f3b4448ad3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 5
   jumpPower: 20
   coyoteTime: 0.25
-  extraJumps: 0
-  wallJumpX: 0
-  wallJumpY: 0
+  extraJumps: 1
+  wallJumpX: 1500
+  wallJumpY: 750
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -227,7 +227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5347692aef2cec84a93d3c2ab44f87f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackCooldown: 2
+  attackCooldown: 0.5
   firePoint: {fileID: 8413638519470396863}
   fireballs:
   - {fileID: 0}
@@ -241,6 +241,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   fireballSound: {fileID: 8300000, guid: eb8da657dba98274bbd9732a227b888a, type: 3}
+  fireballHolder: {fileID: 0}
 --- !u!114 &6850398544776322549
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -254,6 +255,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 3
+  defense: 0
   iFramesDuration: 2
   numberOfFlashes: 3
   components:
@@ -261,6 +263,9 @@ MonoBehaviour:
   - {fileID: 5830668341858065584}
   deathSound: {fileID: 8300000, guid: ab831cafbd425ad42afe928f510dbcd9, type: 3}
   hurtSound: {fileID: 8300000, guid: 6cd61cae1414baa42833a46571b631de, type: 3}
+  healSound: {fileID: 8300000, guid: e4a930f88744c88419132f82cafd25cc, type: 3}
+  respawnEffectPrefab: {fileID: 3432958286849152088, guid: 87ee7299dd44ed747af24dbb91bcd33b, type: 3}
+  enemyDamageEffectPrefab: {fileID: 0}
 --- !u!114 &7116816674918006784
 MonoBehaviour:
   m_ObjectHideFlags: 0

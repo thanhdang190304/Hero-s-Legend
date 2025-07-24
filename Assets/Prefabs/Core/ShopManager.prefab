@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4853186896318430510
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8780877278263865863}
+  - component: {fileID: 557390265615050794}
+  m_Layer: 0
+  m_Name: ShopManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8780877278263865863
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4853186896318430510}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 638.51215, y: 261.96744, z: -3.22794}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &557390265615050794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4853186896318430510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8c162632e97bd24292b0955a615cb67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defenseValueText: {fileID: 0}
+  armor1StatusText: {fileID: 0}
+  armor2StatusText: {fileID: 0}
+  armor3StatusText: {fileID: 0}
+  healthPotionStatusText: {fileID: 0}
+  timerPotionStatusText: {fileID: 0}
+  invulnPotionStatusText: {fileID: 0}
+  healthPotionNumberText: {fileID: 0}
+  timerPotionNumberText: {fileID: 0}
+  invulnPotionNumberText: {fileID: 0}
+  armor1Button: {fileID: 0}
+  armor2Button: {fileID: 0}
+  armor3Button: {fileID: 0}
+  buyHealthPotionButton: {fileID: 0}
+  buyTimerPotionButton: {fileID: 0}
+  buyInvulnPotionButton: {fileID: 0}
+  armor1Defense: 0.5
+  armor2Defense: 1
+  armor3Defense: 1.5
+  armor1Cost: 50
+  armor2Cost: 100
+  armor3Cost: 150
+  healthPotionCost: 1
+  timerPotionCost: 1
+  invulnPotionCost: 1
+  maxPotionStack: 3
+  maxInvulnPotionStack: 1

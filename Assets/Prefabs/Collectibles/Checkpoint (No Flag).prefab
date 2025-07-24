@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3309159192708677374}
   - component: {fileID: 8919067493551548942}
   - component: {fileID: 2165040287407878170}
+  - component: {fileID: 1791195196349687092}
   m_Layer: 0
   m_Name: Checkpoint (No Flag)
   m_TagString: Checkpoint
@@ -77,7 +78,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1565430391
   m_SortingLayer: 2
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 68f54e5fc0fa326458d3e18bdccce704, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -157,3 +158,15 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1791195196349687092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3619153341299366019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cec101a941c5d5e468751d1cd7caa990, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

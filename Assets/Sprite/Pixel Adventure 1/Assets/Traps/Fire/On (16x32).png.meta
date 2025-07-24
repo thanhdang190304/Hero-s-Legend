@@ -134,7 +134,7 @@ TextureImporter:
         width: 16
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -156,7 +156,7 @@ TextureImporter:
         width: 16
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -178,7 +178,7 @@ TextureImporter:
         width: 16
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -187,6 +187,28 @@ TextureImporter:
       bones: []
       spriteID: 14bb27f3678a51d44bb0cf1456d2057b
       internalID: -3538277728090221592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: On (16x32)_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7907c62483e2f14db7c75b1caaaff79
+      internalID: 758396093
       vertices: []
       indices: 
       edges: []
@@ -208,6 +230,7 @@ TextureImporter:
       On (16x32)_0: -4039912110816036059
       On (16x32)_1: 6853643782822115200
       On (16x32)_2: -3538277728090221592
+      On (16x32)_3: 758396093
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

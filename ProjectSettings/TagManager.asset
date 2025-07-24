@@ -7,6 +7,7 @@ TagManager:
   - Ground
   - Enemy
   - Checkpoint
+  - Ally
   layers:
   - Default
   - TransparentFX
@@ -16,11 +17,19 @@ TagManager:
   - UI
   - 
   - 
+<<<<<<< Updated upstream
   - Ground
   - Wall
   - Player
   - Enemy
+  - Arrow
+=======
   - 
+  - 
+  - 
+  - 
+  - 
+>>>>>>> Stashed changes
   - 
   - 
   - 
@@ -44,17 +53,26 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Sky
+    uniqueID: 1608767827
+    locked: 0
+  - name: Cloud
+    uniqueID: 130090231
+    locked: 0
   - name: Background
-    uniqueID: 2749705887
+    uniqueID: 2424153585
     locked: 0
   - name: Foreground
-    uniqueID: 1565430391
+    uniqueID: 3928980359
+    locked: 0
+  - name: Enemies, Traps, and stuff
+    uniqueID: 4149992099
     locked: 0
   - name: Player
-    uniqueID: 35822497
+    uniqueID: 2208697975
     locked: 0
   - name: Ground
-    uniqueID: 760048171
+    uniqueID: 1436377921
     locked: 0
   m_RenderingLayers:
   - Default

@@ -64,7 +64,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4126327879229151492}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Firepoint
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -101,7 +101,8 @@ GameObject:
   - component: {fileID: 5295611941595589249}
   - component: {fileID: 2194753524216112907}
   - component: {fileID: 5364485910207464569}
-  m_Layer: 0
+  - component: {fileID: 807275755555164710}
+  m_Layer: 11
   m_Name: RangedEnemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -117,7 +118,7 @@ Transform:
   m_GameObject: {fileID: 3365190803638480996}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.59, y: -0.1, z: 0}
+  m_LocalPosition: {x: -11.08, y: -0.14, z: 0}
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -165,8 +166,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1565430391
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 84ce2f114ad12bd4ebafc77060220324, type: 3}
   m_Color: {r: 0.764151, g: 0.27033645, b: 0.27033645, a: 1}
@@ -260,13 +261,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 3
+  defense: 0
   iFramesDuration: 0
   numberOfFlashes: 0
   components:
   - {fileID: 2194753524216112907}
-  - {fileID: 0}
+  - {fileID: 5206012678361122000, guid: 50569b18f764ae44bb111457c9023251, type: 3}
   deathSound: {fileID: 8300000, guid: ab831cafbd425ad42afe928f510dbcd9, type: 3}
   hurtSound: {fileID: 8300000, guid: 6cd61cae1414baa42833a46571b631de, type: 3}
+<<<<<<< Updated upstream
+  healSound: {fileID: 0}
+=======
+>>>>>>> Stashed changes
+  respawnEffectPrefab: {fileID: 0}
+  enemyDamageEffectPrefab: {fileID: 119183615461286708, guid: 141e1779869c79845bd243610f187f47, type: 3}
 --- !u!114 &2194753524216112907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -281,7 +289,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackCooldown: 1
   range: 13
-  damage: 1
+  damage: 2
   firepoint: {fileID: 4126327879229151492}
   fireballs:
   - {fileID: 809592262737918192}
@@ -313,6 +321,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
+--- !u!114 &807275755555164710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3365190803638480996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0616cabd50aa5e74d823d183534f1042, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goldPrefab: {fileID: 3675584756815210600, guid: ee2105769df0e0f40a66890dbf6a6ad1, type: 3}
+  spawnChance: 0.5
 --- !u!1 &7190362145930740717
 GameObject:
   m_ObjectHideFlags: 0
@@ -322,7 +344,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6509711691057551608}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: RangedEnemyHolder
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -337,7 +359,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7190362145930740717}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 17.02, y: 2.01, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -397,6 +419,10 @@ PrefabInstance:
     - target: {fileID: 3319898959157654536, guid: 7009c88906e65c746b8dcf5fac8f7c89, type: 3}
       propertyPath: m_Name
       value: EnemyFireball (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3319898959157654536, guid: 7009c88906e65c746b8dcf5fac8f7c89, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -465,6 +491,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyFireball (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3319898959157654536, guid: 7009c88906e65c746b8dcf5fac8f7c89, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -490,7 +520,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1471671047252257844, guid: 7009c88906e65c746b8dcf5fac8f7c89, type: 3}
       propertyPath: m_SortingLayer
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2117108538419568854, guid: 7009c88906e65c746b8dcf5fac8f7c89, type: 3}
       propertyPath: m_LocalScale.x
@@ -547,6 +577,10 @@ PrefabInstance:
     - target: {fileID: 3319898959157654536, guid: 7009c88906e65c746b8dcf5fac8f7c89, type: 3}
       propertyPath: m_Name
       value: EnemyFireball
+      objectReference: {fileID: 0}
+    - target: {fileID: 3319898959157654536, guid: 7009c88906e65c746b8dcf5fac8f7c89, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -615,6 +649,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyFireball (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3319898959157654536, guid: 7009c88906e65c746b8dcf5fac8f7c89, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -681,6 +719,10 @@ PrefabInstance:
     - target: {fileID: 3319898959157654536, guid: 7009c88906e65c746b8dcf5fac8f7c89, type: 3}
       propertyPath: m_Name
       value: EnemyFireball (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3319898959157654536, guid: 7009c88906e65c746b8dcf5fac8f7c89, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -749,6 +791,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyFireball (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 3319898959157654536, guid: 7009c88906e65c746b8dcf5fac8f7c89, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -815,6 +861,10 @@ PrefabInstance:
     - target: {fileID: 3319898959157654536, guid: 7009c88906e65c746b8dcf5fac8f7c89, type: 3}
       propertyPath: m_Name
       value: EnemyFireball (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3319898959157654536, guid: 7009c88906e65c746b8dcf5fac8f7c89, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -883,6 +933,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyFireball (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 3319898959157654536, guid: 7009c88906e65c746b8dcf5fac8f7c89, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -950,6 +1004,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyFireball (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 3319898959157654536, guid: 7009c88906e65c746b8dcf5fac8f7c89, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1016,6 +1074,10 @@ PrefabInstance:
     - target: {fileID: 3319898959157654536, guid: 7009c88906e65c746b8dcf5fac8f7c89, type: 3}
       propertyPath: m_Name
       value: EnemyFireball (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3319898959157654536, guid: 7009c88906e65c746b8dcf5fac8f7c89, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

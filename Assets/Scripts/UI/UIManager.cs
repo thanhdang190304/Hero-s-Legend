@@ -41,7 +41,7 @@ public class UIManager : MonoBehaviour
     //Main Menu
     public void MainMenu()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("_MainMenu_"); //Load main menu scene
     }
 
     //Quit game/exit play mode if in Editor

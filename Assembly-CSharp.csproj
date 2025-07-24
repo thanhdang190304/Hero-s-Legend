@@ -59,37 +59,182 @@
     <UnityVersion>6000.0.36f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Analyzer Include="C:\Users\dangt\.vscode\extensions\visualstudiotoolsforunity.vstuc-1.1.2\Analyzers\Microsoft.Unity.Analyzers.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.0.36f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.SourceGenerators.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.0.36f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.0.36f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Enemy\EnemyPatrol.cs" />
-    <Compile Include="Assets\Scripts\Enemy\EnemyFireballHolder.cs" />
+<<<<<<< Updated upstream
+    <Compile Include="Assets\Scripts\BackgroundController.cs" />
+    <Compile Include="Assets\Scripts\Core\LevelCompletionTrigger.cs" />
+    <Compile Include="Assets\Scripts\Enemy\KnightAI\MeleeEnemy.cs" />
+    <Compile Include="Assets\Scripts\Core\LoadShop.cs" />
+    <Compile Include="Assets\Scripts\Hero\NinjaPlayer\NinjaCloneAI.cs" />
+=======
+    <Compile Include="Assets\Scripts\Character\DragonPlayer\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\Character\Archer\ArcherArrow.cs" />
+    <Compile Include="Assets\Scripts\Character\NinjaPlayer\NinjaMovement.cs" />
+    <Compile Include="Assets\Scripts\Core\LevelCompletionTrigger.cs" />
+    <Compile Include="Assets\Scripts\Enemy\KnightAI\MeleeEnemy.cs" />
+    <Compile Include="Assets\Scripts\Core\LoadShop.cs" />
+>>>>>>> Stashed changes
     <Compile Include="Assets\Scripts\Traps\EnemyDamage.cs" />
+    <Compile Include="Assets\Scripts\UI\FPSManager.cs" />
     <Compile Include="Assets\Scripts\Health\Healthbar.cs" />
+    <Compile Include="Assets\Scripts\Data and Profile\StarsRewardDisplay.cs" />
+<<<<<<< Updated upstream
+=======
+    <Compile Include="Assets\Scripts\Character\Archer\ArcherAttaack.cs" />
+>>>>>>> Stashed changes
+    <Compile Include="Assets\Sprite\Archer\Scripts\Change_Sprite.cs" />
+    <Compile Include="Assets\Scripts\Rooms\Room.cs" />
     <Compile Include="Assets\Scripts\Rooms\Door.cs" />
+    <Compile Include="Assets\Scripts\Core\LevelSelectionManager.cs" />
+<<<<<<< Updated upstream
+    <Compile Include="Assets\Scripts\Hero\DragonPlayer\PlayerRespawn.cs" />
+    <Compile Include="Assets\Scripts\Hero\Archer\ArcherMovement.cs" />
+=======
+    <Compile Include="Assets\Scripts\Character\CharacterSwitcher.cs" />
+>>>>>>> Stashed changes
+    <Compile Include="Assets\Scripts\Data and Profile\LevelManager.cs" />
     <Compile Include="Assets\Scripts\Traps\Enemy_Sideways.cs" />
-    <Compile Include="Assets\Scripts\Enemy\EnemyProjectile.cs" />
-    <Compile Include="Assets\Scripts\Player\Projectile.cs" />
-    <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
-    <Compile Include="Assets\Scripts\Player\PlayerRespawn.cs" />
+    <Compile Include="Assets\Scripts\Rooms\CheckpointFlag.cs" />
+    <Compile Include="Assets\Scripts\Data and Profile\Mission\Mission.cs" />
+    <Compile Include="Assets\Scripts\Gold\GoldDropper.cs" />
+<<<<<<< Updated upstream
+    <Compile Include="Assets\Scripts\UI\PulseEffect.cs" />
+    <Compile Include="Assets\Scripts\Data and Profile\Mission\MissionUIManager.cs" />
+    <Compile Include="Assets\Scripts\Rooms\ToMainMenuTrigger.cs" />
+    <Compile Include="Assets\Scripts\Core\GameFace.cs" />
+    <Compile Include="Assets\Scripts\Enemy\EnemyMonk\Monk.cs" />
+    <Compile Include="Assets\Scripts\Hero\Archer\ArcherArrow.cs" />
+=======
+    <Compile Include="Assets\Scripts\Data and Profile\Mission\MissionUIManager.cs" />
+    <Compile Include="Assets\Scripts\Character\DragonPlayer\PlayerAttack.cs" />
+    <Compile Include="Assets\Scripts\Core\GameFace.cs" />
+    <Compile Include="Assets\Scripts\Enemy\EnemyMonk\Monk.cs" />
+>>>>>>> Stashed changes
+    <Compile Include="Assets\Scripts\Enemy\KnightAI\EnemyPatrol.cs" />
+    <Compile Include="Assets\Scripts\Data and Profile\ShopManager.cs" />
+    <Compile Include="Assets\Scripts\Enemy\NinjaFrog\NinjaFrogAI.cs" />
+    <Compile Include="Assets\Scripts\Data and Profile\UpgradeManager.cs" />
+    <Compile Include="Assets\Scripts\Enemy\Teleport AI\TeleportAI.cs" />
+<<<<<<< Updated upstream
+    <Compile Include="Assets\Scripts\Hero\DragonPlayer\PlayerAttack.cs" />
+=======
+>>>>>>> Stashed changes
+    <Compile Include="Assets\Scripts\Data and Profile\Mission\MissionManager.cs" />
+    <Compile Include="Assets\Scripts\Enemy\KnightAI\EnemyFireballHolder.cs" />
+    <Compile Include="Assets\Scripts\Traps\Spikehead.cs" />
     <Compile Include="Assets\Scripts\LoadingManager.cs" />
+<<<<<<< Updated upstream
+    <Compile Include="Assets\Scripts\Core\SkillManager.cs" />
+    <Compile Include="Assets\Scripts\Enemy\GuardAI\GuardAI.cs" />
+    <Compile Include="Assets\Scripts\Rooms\TeleportPlayer.cs" />
+    <Compile Include="Assets\Scripts\Hero\Archer\Arrow.cs" />
+    <Compile Include="Assets\Scripts\Hero\DragonPlayer\Projectile.cs" />
+    <Compile Include="Assets\Scripts\Rooms\FanUpdraft.cs" />
+    <Compile Include="Assets\Scripts\Hero\CharacterSwitcher.cs" />
+    <Compile Include="Assets\Scripts\Enemy\Slime\SplittingSlime.cs" />
+    <Compile Include="Assets\Scripts\Traps\ArrowTrap.cs" />
     <Compile Include="Assets\Scripts\Health\HealthCollectible.cs" />
-    <Compile Include="Assets\Scripts\Player\PlayerAttack.cs" />
-    <Compile Include="Assets\Scripts\Enemy\MeleeEnemy.cs" />
+=======
+    <Compile Include="Assets\Scripts\Character\Archer\Arrow.cs" />
+    <Compile Include="Assets\Scripts\Character\Archer\ArcherMovement.cs" />
+    <Compile Include="Assets\Scripts\Core\SkillManager.cs" />
+    <Compile Include="Assets\Scripts\Rooms\TeleportPlayer.cs" />
+    <Compile Include="Assets\Scripts\Rooms\FanUpdraft.cs" />
+    <Compile Include="Assets\Scripts\Enemy\Slime\SplittingSlime.cs" />
+    <Compile Include="Assets\Scripts\Traps\ArrowTrap.cs" />
+    <Compile Include="Assets\Scripts\Health\HealthCollectible.cs" />
+    <Compile Include="Assets\Scripts\Character\DragonPlayer\PlayerRespawn.cs" />
+>>>>>>> Stashed changes
+    <Compile Include="Assets\Scripts\Enemy\TankerShark\SharkTank.cs" />
+    <Compile Include="Assets\Scripts\Enemy\EnemyMonk\Summon.cs" />
+    <Compile Include="Assets\Scripts\Data and Profile\SaveSystem.cs" />
+    <Compile Include="Assets\Scripts\Data and Profile\CharacterIconDisplay.cs" />
+    <Compile Include="Assets\Scripts\Gold\Gold.cs" />
+    <Compile Include="Assets\Scripts\Data and Profile\ProfileSlotUI.cs" />
+<<<<<<< Updated upstream
+    <Compile Include="Assets\Scripts\Hero\NinjaPlayer\NinjaAttack.cs" />
+    <Compile Include="Assets\Scripts\Enemy\KnightAI\RangedEnemy.cs" />
+    <Compile Include="Assets\Scripts\Hero\NinjaPlayer\NinjaMovement.cs" />
+    <Compile Include="Assets\Scripts\Hero\DragonPlayer\PlayerMovement.cs" />
+=======
+    <Compile Include="Assets\Scripts\Enemy\KnightAI\RangedEnemy.cs" />
+>>>>>>> Stashed changes
+    <Compile Include="Assets\Scripts\Data and Profile\ProfileSelectionManager.cs" />
     <Compile Include="Assets\Scripts\UI\SelectionArrow.cs" />
+    <Compile Include="Assets\Scripts\Core\LevelLoader.cs" />
+    <Compile Include="Assets\Scripts\Enemy\Chasing AI\EnemyAI.cs" />
+    <Compile Include="Assets\Scripts\Core\LevelStartManager.cs" />
+<<<<<<< Updated upstream
+    <Compile Include="Assets\Scripts\Hero\Archer\ArcherAttaack.cs" />
+=======
+>>>>>>> Stashed changes
+    <Compile Include="Assets\Scripts\Gold\GoldManager.cs" />
+    <Compile Include="Assets\Scripts\Core\LoadVictory.cs" />
     <Compile Include="Assets\Scripts\Core\SoundManager.cs" />
+    <Compile Include="Assets\Scripts\Character\DragonPlayer\Projectile.cs" />
     <Compile Include="Assets\Scripts\Health\Health.cs" />
+<<<<<<< Updated upstream
+=======
+    <Compile Include="Assets\Scripts\Character\NinjaPlayer\NinjaAttack.cs" />
+>>>>>>> Stashed changes
+    <Compile Include="Assets\Scripts\Data and Profile\StarReward.cs" />
+    <Compile Include="Assets\Scripts\Data and Profile\HeroSelectionManager.cs" />
     <Compile Include="Assets\Scripts\Core\CameraController.cs" />
+    <Compile Include="Assets\Scripts\Core\PotionManaager.cs" />
+<<<<<<< Updated upstream
+=======
+    <Compile Include="Assets\Scripts\Character\NinjaPlayer\NinjaCloneAI.cs" />
+>>>>>>> Stashed changes
     <Compile Include="Assets\Scripts\Traps\FireTrap.cs" />
+    <Compile Include="Assets\Scripts\Core\CharacterSpawner.cs" />
     <Compile Include="Assets\Scripts\UI\UIManager.cs" />
-    <Compile Include="Assets\Scripts\Enemy\RangedEnemy.cs" />
+    <Compile Include="Assets\Scripts\Data and Profile\PlayerProfile.cs" />
+    <Compile Include="Assets\Scripts\Enemy\KnightAI\EnemyProjectile.cs" />
     <Compile Include="Assets\Scripts\UI\VolumeText.cs" />
+    <Compile Include="Assets\Scripts\Core\LevelTimer.cs" />
+    <Compile Include="Assets\Scripts\UI\CharacterHover.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Sprite\Knight Files\Read Me.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile-2-Pass.shader" />
+    <None Include="Assets\Effects\Cartoon FX Remaster\CFXR Assets\Shaders\CFXR_SETTINGS.cginc" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\Effects\Cartoon FX Remaster\CFXR Assets\Shaders\CFXR.cginc" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\Sprite\Dragon Warrior Files\Read Me.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\SDFFunctions.hlsl" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
+    <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\Effects\Cartoon FX Remaster\CFXR Prefabs\Texts\_Make your own text effect.txt" />
+    <None Include="Assets\Effects\Cartoon FX Remaster\CFXR Assets\Shaders\CFXR_PASSES.cginc" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+<<<<<<< Updated upstream
+    <None Include="Assets\Sprite\Nature Landscapes Free Pixel Art\License.txt" />
+=======
+>>>>>>> Stashed changes
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\Sprite\Ninja Files\Read Me.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets\Effects\Cartoon FX Remaster\CFXR Assets\Shaders\CFXR_URP.cginc" />
+    <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -1072,12 +1217,12 @@
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.Searcher.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Searcher.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.Rider.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Searcher.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Searcher.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="PsdPlugin">
@@ -1140,12 +1285,12 @@
       <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.PlasticSCM.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.2D.Aseprite.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Aseprite.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.PlasticSCM.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Multiplayer.Center.Editor">
@@ -1326,6 +1471,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="CFXRRuntime.csproj" />
+<<<<<<< Updated upstream
+    <ProjectReference Include="ToonyColorsPro.Demo.Editor.csproj" />
+    <ProjectReference Include="CFXRDemo.csproj" />
+    <ProjectReference Include="KinoBloom.Runtime.csproj" />
+=======
+    <ProjectReference Include="2DHandPaintedEditor.csproj" />
+    <ProjectReference Include="ToonyColorsPro.Demo.Editor.csproj" />
+    <ProjectReference Include="CFXRDemo.csproj" />
+    <ProjectReference Include="KinoBloom.Runtime.csproj" />
+    <ProjectReference Include="2DHandPainted.csproj" />
+>>>>>>> Stashed changes
+    <ProjectReference Include="CFXREditor.csproj" />
   </ItemGroup>
   <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
   <ItemGroup>

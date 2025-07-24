@@ -15,10 +15,10 @@ GameObject:
   - component: {fileID: 362211345219687483}
   - component: {fileID: 7111571415538498775}
   - component: {fileID: 8728303824607691805}
-  - component: {fileID: 541075217873345968}
+  - component: {fileID: 740389423727865447}
   m_Layer: 11
   m_Name: MeleeEnemy 1
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -79,8 +79,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1565430391
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 84ce2f114ad12bd4ebafc77060220324, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -174,12 +174,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 3
+  defense: 0
   iFramesDuration: 0
   numberOfFlashes: 0
   components:
   - {fileID: 7111571415538498775}
   deathSound: {fileID: 8300000, guid: ab831cafbd425ad42afe928f510dbcd9, type: 3}
   hurtSound: {fileID: 8300000, guid: 6cd61cae1414baa42833a46571b631de, type: 3}
+<<<<<<< Updated upstream
+  healSound: {fileID: 0}
+=======
+>>>>>>> Stashed changes
+  respawnEffectPrefab: {fileID: 0}
+  enemyDamageEffectPrefab: {fileID: 119183615461286708, guid: 141e1779869c79845bd243610f187f47, type: 3}
 --- !u!114 &7111571415538498775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -200,7 +207,6 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 1024
-  attackSound: {fileID: 8300000, guid: 4bb05b8f742fbc047930c7619fd6c4a7, type: 3}
 --- !u!114 &8728303824607691805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -214,7 +220,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
---- !u!114 &541075217873345968
+--- !u!114 &740389423727865447
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -223,7 +229,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 7890372057819656367}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d34d2046721a39b4ca7949e30e6cc56a, type: 3}
+  m_Script: {fileID: 11500000, guid: 0616cabd50aa5e74d823d183534f1042, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  checkpoint: {fileID: 8300000, guid: 549a4b711e851a748aa1b5bc634cdd10, type: 3}
+  goldPrefab: {fileID: 3675584756815210600, guid: ee2105769df0e0f40a66890dbf6a6ad1, type: 3}
+  spawnChance: 0.5
